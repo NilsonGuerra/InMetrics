@@ -21,7 +21,7 @@ E login com Admin
 E entrar no menu de alteracao
 E selecionar o titulo da Profissao
 E realizar a pesquisa
-E entrar no cadastro do usuario
+E entrar no cadastro do usuario 
 E selecionar a opcao de editar o cadastro
 Quando realizar alteracao no cadastro do funcionario
 Entao salvar alteraca realizada
