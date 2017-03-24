@@ -17,9 +17,9 @@ Quando(/^realizar o cadastro de usuario$/) do
 
   find(:id, 'menu_pim_addEmployee').click
 
-  fill_in('firstName', :with => 'Aprendendo')
+  fill_in('firstName', :with => 'Aprender')
   
-  fill_in('middleName', :with => 'Chegaremos')
+  fill_in('middleName', :with => 'Chegar')
  
   fill_in('lastName', :with => 'La')
   
@@ -27,7 +27,7 @@ Quando(/^realizar o cadastro de usuario$/) do
   
   check('chkLogin')
 
-  fill_in('user_name', :with => 'Ligeiro')
+  fill_in('user_name', :with => 'Testes')
   sleep 1
 
   fill_in('user_password', :with => 'Eio7203$')
@@ -54,7 +54,9 @@ Entao(/^usuario cadastrado$/) do
   find(:id, 'welcome').click
   sleep 1
   
-  click_link('Logout')
+  click_on('Logout')
+
+  #page.find_link("/auth/logout")[:href]
   sleep 2
 
 end
@@ -69,6 +71,7 @@ Quando(/^realizar alteração de usuario$/) do
   
   fill_in('txtUsername', :with => 'Admin')
   sleep 1
+  
   fill_in('txtPassword', :with => 'admin')
 
   find(:id, 'btnLogin').click
